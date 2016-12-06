@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Forrester Suite">
+
+<!-- <listeners>
+    <listener class-name="listener.TestsListenerAdapter" />
+</listeners> -->
+<test name="Navigate Test">
+    <classes>
+        <class name="com.forrester.testCases.Navigate" ></class>  
+    </classes>
+</test>
+
+<test name="Mobformation Test">
+    <classes>
+        <class name="com.forrester.testCases.Mobformation" ></class>  
+    </classes>
+</test>
+<test name="MobSearch Test">
+    <classes>
+        <class name="com.forrester.testCases.MobSearch" ></class>  
+    </classes>
+</test>
+</suite>
