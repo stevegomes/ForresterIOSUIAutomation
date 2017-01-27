@@ -25,7 +25,7 @@ public class MobileAppConfiguration {
 	AndroidDriver drivera;
 	IOSDriver driveri;
 	static AppiumDriverLocalService service;
-	static String service_url;
+    static String service_url;
 
 	// Method to setup the desired capabilities for mobile Application
 	// configuration - Android
@@ -90,17 +90,16 @@ public class MobileAppConfiguration {
 	// Method to setup the desired capabilities for mobile app application
 	// configuration - iOS
 	@SuppressWarnings("rawtypes")
-	public IOSDriver setupMobileAppConfigForIOS() throws InterruptedException,
-			IOException {
+	public IOSDriver setupMobileAppConfigForIOS() throws InterruptedException,IOException 
+	{
 		AppiumUtil appiumUtil = new AppiumUtil();
 		String url = appiumUtil.startAppiumServer();
 		String currentpath = System.getProperty("user.dir") + "/Apps";
 		File appDir = new File(currentpath);
 		File app = new File(appDir, "Forrester_TAP.app");
-
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability("deviceName", "iPhone 6");
-		capabilities.setCapability("platformVersion", "9.3");
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability("deviceName", "iPhone 6 Plus");
+		capabilities.setCapability("platformVersion", "9.1");
 		capabilities.setCapability("platformName", "iOS");
 		capabilities.setCapability("app", app.getAbsolutePath());
 		driveri = new IOSDriver(new URL(url), capabilities);

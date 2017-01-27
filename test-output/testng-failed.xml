@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Forrester Suite]">
+  <test name="Navigate Test(failed)">
+    <classes>
+      <class name="com.forrester.testCases.Navigate">
+        <methods>
+          <include name="navigateaction"/>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- com.forrester.testCases.Navigate -->
+    </classes>
+  </test> <!-- Navigate Test(failed) -->
   <test name="Mobformation Test(failed)">
     <classes>
       <class name="com.forrester.testCases.Mobformation">
         <methods>
-          <include name="checkmobformation" invocation-numbers="0 1"/>
+          <include name="checkmobformation"/>
         </methods>
       </class> <!-- com.forrester.testCases.Mobformation -->
       <class name="com.forrester.testCases.Navigate">
@@ -13,11 +23,6 @@
           <include name="beforetest"/>
         </methods>
       </class> <!-- com.forrester.testCases.Navigate -->
-      <class name="com.forrester.testCases.MobSearch">
-        <methods>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.forrester.testCases.MobSearch -->
     </classes>
   </test> <!-- Mobformation Test(failed) -->
   <test name="MobSearch Test(failed)">
@@ -29,8 +34,7 @@
       </class> <!-- com.forrester.testCases.Navigate -->
       <class name="com.forrester.testCases.MobSearch">
         <methods>
-          <include name="searchMob" invocation-numbers="1"/>
-          <include name="teardown"/>
+          <include name="searchMob"/>
         </methods>
       </class> <!-- com.forrester.testCases.MobSearch -->
     </classes>

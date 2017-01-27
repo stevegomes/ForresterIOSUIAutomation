@@ -39,7 +39,7 @@ public void onTestFailure(ITestResult result)
           
 
 //This method will get executed when a test case is passed
-public void onTestSuccess(ITestResult result) {
+   public void onTestSuccess(ITestResult result) {
 
 	try
 	{
@@ -66,7 +66,7 @@ public void onTestSuccess(ITestResult result) {
 	      }
 
 //This method will get executed when a test case is skipped
-public void onTestSkipped(ITestResult result){
+    public void onTestSkipped(ITestResult result){
 	try
 	{
 	xlse.setCellData("Test Cases", "Results", i, "Skipped");

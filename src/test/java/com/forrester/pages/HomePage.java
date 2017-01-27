@@ -18,7 +18,7 @@ public class HomePage extends Base
 public  void navigation() throws InterruptedException 
 	{
 	
-		     Thread.sleep(13000);
+		     Thread.sleep(25000);
 		     String text = text("onboardingtext");
 		     System.out.println(text);
 			 click("first_onboarding");

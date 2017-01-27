@@ -18,24 +18,23 @@
                <b>Forrester Suite</b>
             </td>
             <td style="background-color: #FFBBBB; padding: 3px 3px 3px 0;" align="center">
-               <div style="width: 50px;">1</div>
+               <div style="width: 50px;">0</div>
             </td>
             <td style="background-color: lightgreen; padding: 3px 3px 3px 0;" align="center">
-               <div style="width: 50px;">2</div>
+               <div style="width: 50px;">0</div>
             </td>
             <td style="background-color: #FFFFBB; padding: 3px 3px 3px 0;" align="center">
-               <div style="width: 50px;">2</div>
+               <div style="width: 50px;">5</div>
             </td>
             <td align="center" style="background-color: #eaf0f7; padding: 3px 3px 3px 0;">
                <div style="width: 50px;">5</div>
             </td>
             <td align="center"
                 style="font-weight: bold; background-color: #eaf0f7; padding: 3px 3px 3px 0;">
-               <div style="width: 50px;">40%</div>
+               <div style="width: 50px;">0%</div>
             </td>
             <td style="background-color: #eaf0f7; padding: 3px 3px 3px 0;" align="center"
-                nowrap="true">2m
-               57s
+                nowrap="true">3s
                
             </td>
          </tr>
@@ -90,18 +89,24 @@
                <td nowrap="true">Duration</td>
                <td>Exception</td>
             </tr>
-            <tr id="com.forrester.testCases.MobSearch_searchMob_byStatus_failed_FAIL1_row"
-                class="testMethodStatusFAIL">
+            <tr id="com.forrester.testCases.Navigate_beforetest_byStatus_failed_FAIL1_row"
+                class="testMethodStatusFAIL testMethodStatusCONF">
                <td width="100%" class="firstMethodCell">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.MobSearch_searchMob_byStatus_failed_FAIL1_details')">searchMob({PeopleSearch=Mon, Runmode=Y, ExpectedText=Bon})</a>
+                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Navigate_beforetest_byStatus_failed_FAIL1_details')">beforetest()</a>
                </td>
-               <td nowrap="true">17:09:34</td>
-               <td nowrap="true" align="right">18s
+               <td nowrap="true">01:40:26</td>
+               <td nowrap="true" align="right">0 ms
                   
                </td>
                <td nowrap="true">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.MobSearch_searchMob_byStatus_failed_FAIL1_exception')">java.lang.AssertionError: 
-                     expected [Bon] but found [Mobs]
+                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Navigate_beforetest_byStatus_failed_FAIL1_exception')">org.openqa.selenium.SessionNotCreatedException: 
+                     A new session could not be created. Details: Appium's IosDriver does not support xcode version 8.2.1. Apple has deprecated
+                     UIAutomation. Use the "XCUITest" automationName capability instead. (WARNING: The server did not provide any stacktrace information)
+                     Command duration or timeout: 370 milliseconds
+                     Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+                     System info: host: 'PUNsgomes0MFVH7.local', ip: '192.168.1.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.2',
+                     java.version: '1.8.0_60'
+                     Driver info: io.appium.java_client.ios.IOSDriver
                      
                   </a>
                    
@@ -110,29 +115,22 @@
             </tr>
             <tr>
                <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.MobSearch_searchMob_byStatus_failed_FAIL1_details"
+                  <div id="com.forrester.testCases.Navigate_beforetest_byStatus_failed_FAIL1_details"
                        class="testMethodDetails">
                      <div>
-                        <b>Name: </b>searchMob
+                        <b>Name: </b>beforetest
                      </div>
                      <div>
-                        <b>Signature: </b>searchMob(java.util.Hashtable)[pri:2, instance:com.forrester.testCases.MobSearch@36fc695d]
+                        <b>Signature: </b>beforetest()[pri:0, instance:com.forrester.testCases.Navigate@6df97b55]
                      </div>
                      <div>
-                        <b>Parameters: </b>
-                        
-                        {PeopleSearch=Mon, Runmode=Y, ExpectedText=Bon}
-                        
-                        
+                        <b>Start time: </b>01:40:26
                      </div>
                      <div>
-                        <b>Start time: </b>17:09:34
+                        <b>End time: </b>01:40:26
                      </div>
                      <div>
-                        <b>End time: </b>17:09:52
-                     </div>
-                     <div>
-                        <b>Duration: </b>18s
+                        <b>Duration: </b>0 ms
                         
                      </div>
                   </div>
@@ -140,31 +138,44 @@
             </tr>
             <tr>
                <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.MobSearch_searchMob_byStatus_failed_FAIL1_exception"
+                  <div id="com.forrester.testCases.Navigate_beforetest_byStatus_failed_FAIL1_exception"
                        class="testMethodDetails">
-                     <pre style="padding: 5px; margin: 0;">java.lang.AssertionError: expected [Bon] but found [Mobs]
-                        	at org.testng.Assert.fail(Assert.java:94)
-                        	at org.testng.Assert.failNotEquals(Assert.java:496)
-                        	at org.testng.Assert.assertEquals(Assert.java:125)
-                        	at org.testng.Assert.assertEquals(Assert.java:178)
-                        	at org.testng.Assert.assertEquals(Assert.java:188)
-                        	at com.forrester.pages.MobsPage.MonPeopleSearch(MobsPage.java:28)
-                        	at com.forrester.testCases.MobSearch.searchMob(MobSearch.java:37)
+                     <pre style="padding: 5px; margin: 0;">org.openqa.selenium.SessionNotCreatedException: A new session could not be created. Details: Appium's IosDriver does not support
+                        xcode version 8.2.1. Apple has deprecated UIAutomation. Use the "XCUITest" automationName capability instead. (WARNING: The
+                        server did not provide any stacktrace information)
+                        Command duration or timeout: 370 milliseconds
+                        Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+                        System info: host: 'PUNsgomes0MFVH7.local', ip: '192.168.1.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.2',
+                        java.version: '1.8.0_60'
+                        Driver info: io.appium.java_client.ios.IOSDriver
+                        	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+                        	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+                        	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+                        	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+                        	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+                        	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+                        	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+                        	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+                        	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+                        	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:36)
+                        	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:114)
+                        	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:132)
+                        	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:82)
+                        	at com.forrester.config.MobileAppConfiguration.setupMobileAppConfigForIOS(MobileAppConfiguration.java:105)
+                        	at com.forrester.testCases.Navigate.beforetest(Navigate.java:29)
                         	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
                         	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
                         	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
                         	at java.lang.reflect.Method.invoke(Method.java:497)
                         	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-                        	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-                        	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-                        	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-                        	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-                        	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-                        	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-                        	at org.testng.TestRunner.run(TestRunner.java:624)
-                        	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-                        	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+                        	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+                        	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+                        	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:298)
                         	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
                         	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
                         	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
@@ -177,13 +188,13 @@
                   </div>
                </td>
             </tr>
-            <tr id="com.forrester.testCases.Navigate_navigateaction_byStatus_passed_PASS1_row"
-                class="testMethodStatusPASS">
+            <tr id="com.forrester.testCases.Navigate_navigateaction_byStatus_skiped_SKIP1_row"
+                class="testMethodStatusSKIP">
                <td width="100%" class="firstMethodCell">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Navigate_navigateaction_byStatus_passed_PASS1_details')">navigateaction({PlaceLocation=ariz, Runmode=Y})</a>
+                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Navigate_navigateaction_byStatus_skiped_SKIP1_details')">navigateaction({PlaceLocation=ariz, Runmode=Y})</a>
                </td>
-               <td nowrap="true">17:07:58</td>
-               <td nowrap="true" align="right">49s
+               <td nowrap="true">01:40:37</td>
+               <td nowrap="true" align="right">0 ms
                   
                </td>
                <td nowrap="true">
@@ -193,7 +204,7 @@
             </tr>
             <tr>
                <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.Navigate_navigateaction_byStatus_passed_PASS1_details"
+                  <div id="com.forrester.testCases.Navigate_navigateaction_byStatus_skiped_SKIP1_details"
                        class="testMethodDetails">
                      <div>
                         <b>Name: </b>navigateaction
@@ -209,237 +220,29 @@
                         
                      </div>
                      <div>
-                        <b>Start time: </b>17:07:58
+                        <b>Start time: </b>01:40:37
                      </div>
                      <div>
-                        <b>End time: </b>17:08:47
+                        <b>End time: </b>01:40:37
                      </div>
                      <div>
-                        <b>Duration: </b>49s
+                        <b>Duration: </b>0 ms
                         
                      </div>
                   </div>
                </td>
             </tr>
             <tr></tr>
-            <tr id="com.forrester.testCases.MobSearch_searchMob_byStatus_passed_PASS2_row"
-                class="testMethodStatusPASS">
-               <td width="100%" class="firstMethodCell">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.MobSearch_searchMob_byStatus_passed_PASS2_details')">searchMob({PeopleSearch=Don, Runmode=Y, ExpectedText=Mobs})</a>
-               </td>
-               <td nowrap="true">17:09:06</td>
-               <td nowrap="true" align="right">26s
-                  
-               </td>
-               <td nowrap="true">
-                   
-                  
-               </td>
-            </tr>
-            <tr>
-               <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.MobSearch_searchMob_byStatus_passed_PASS2_details"
-                       class="testMethodDetails">
-                     <div>
-                        <b>Name: </b>searchMob
-                     </div>
-                     <div>
-                        <b>Signature: </b>searchMob(java.util.Hashtable)[pri:2, instance:com.forrester.testCases.MobSearch@36fc695d]
-                     </div>
-                     <div>
-                        <b>Parameters: </b>
-                        
-                        {PeopleSearch=Don, Runmode=Y, ExpectedText=Mobs}
-                        
-                        
-                     </div>
-                     <div>
-                        <b>Start time: </b>17:09:06
-                     </div>
-                     <div>
-                        <b>End time: </b>17:09:32
-                     </div>
-                     <div>
-                        <b>Duration: </b>26s
-                        
-                     </div>
-                  </div>
-               </td>
-            </tr>
-            <tr></tr>
-            <tr id="com.forrester.testCases.MobSearch_teardown_byStatus_passed_PASS3_row"
-                class="testMethodStatusPASS testMethodStatusCONF">
-               <td width="100%" class="firstMethodCell">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.MobSearch_teardown_byStatus_passed_PASS3_details')">teardown()</a>
-               </td>
-               <td nowrap="true">17:09:55</td>
-               <td nowrap="true" align="right">1 ms
-                  
-               </td>
-               <td nowrap="true">
-                   
-                  
-               </td>
-            </tr>
-            <tr>
-               <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.MobSearch_teardown_byStatus_passed_PASS3_details"
-                       class="testMethodDetails">
-                     <div>
-                        <b>Name: </b>teardown
-                     </div>
-                     <div>
-                        <b>Signature: </b>teardown()[pri:0, instance:com.forrester.testCases.MobSearch@36fc695d]
-                     </div>
-                     <div>
-                        <b>Start time: </b>17:09:55
-                     </div>
-                     <div>
-                        <b>End time: </b>17:09:55
-                     </div>
-                     <div>
-                        <b>Duration: </b>1 ms
-                        
-                     </div>
-                  </div>
-               </td>
-            </tr>
-            <tr></tr>
-            <tr id="com.forrester.testCases.Navigate_beforetest_byStatus_passed_PASS4_row"
-                class="testMethodStatusPASS testMethodStatusCONF">
-               <td width="100%" class="firstMethodCell">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Navigate_beforetest_byStatus_passed_PASS4_details')">beforetest()</a>
-               </td>
-               <td nowrap="true">17:06:48</td>
-               <td nowrap="true" align="right">1m
-                  9s
-                  
-               </td>
-               <td nowrap="true">
-                   
-                  
-               </td>
-            </tr>
-            <tr>
-               <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.Navigate_beforetest_byStatus_passed_PASS4_details"
-                       class="testMethodDetails">
-                     <div>
-                        <b>Name: </b>beforetest
-                     </div>
-                     <div>
-                        <b>Signature: </b>beforetest()[pri:0, instance:com.forrester.testCases.Navigate@6df97b55]
-                     </div>
-                     <div>
-                        <b>Start time: </b>17:06:48
-                     </div>
-                     <div>
-                        <b>End time: </b>17:07:58
-                     </div>
-                     <div>
-                        <b>Duration: </b>1m
-                        9s
-                        
-                     </div>
-                  </div>
-               </td>
-            </tr>
-            <tr></tr>
-            <tr id="com.forrester.testCases.Mobformation_checkmobformation_byStatus_skiped_SKIP1_row"
-                class="testMethodStatusSKIP">
-               <td width="100%" class="firstMethodCell">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Mobformation_checkmobformation_byStatus_skiped_SKIP1_details')">checkmobformation({Runmode=N, Text=Location Error, Description=Awesome, PlaceSearch=Phil})</a>
-               </td>
-               <td nowrap="true">17:08:52</td>
-               <td nowrap="true" align="right">1 ms
-                  
-               </td>
-               <td nowrap="true">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Mobformation_checkmobformation_byStatus_skiped_SKIP1_exception')">org.testng.SkipException: 
-                     Runmode set to NO for the data set
-                     
-                  </a>
-                   
-                  
-               </td>
-            </tr>
-            <tr>
-               <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.Mobformation_checkmobformation_byStatus_skiped_SKIP1_details"
-                       class="testMethodDetails">
-                     <div>
-                        <b>Name: </b>checkmobformation
-                     </div>
-                     <div>
-                        <b>Signature: </b>checkmobformation(java.util.Hashtable)[pri:3, instance:com.forrester.testCases.Mobformation@459e9125]
-                     </div>
-                     <div>
-                        <b>Parameters: </b>
-                        
-                        {Runmode=N, Text=Location Error, Description=Awesome, PlaceSearch=Phil}
-                        
-                        
-                     </div>
-                     <div>
-                        <b>Start time: </b>17:08:52
-                     </div>
-                     <div>
-                        <b>End time: </b>17:08:52
-                     </div>
-                     <div>
-                        <b>Duration: </b>1 ms
-                        
-                     </div>
-                  </div>
-               </td>
-            </tr>
-            <tr>
-               <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.Mobformation_checkmobformation_byStatus_skiped_SKIP1_exception"
-                       class="testMethodDetails">
-                     <pre style="padding: 5px; margin: 0;">org.testng.SkipException: Runmode set to NO for the data set
-                        	at com.forrester.testCases.Mobformation.checkmobformation(Mobformation.java:37)
-                        	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-                        	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-                        	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-                        	at java.lang.reflect.Method.invoke(Method.java:497)
-                        	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-                        	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-                        	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-                        	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-                        	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-                        	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-                        	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-                        	at org.testng.TestRunner.run(TestRunner.java:624)
-                        	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-                        	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-                        	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-                        	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-                        	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-                        	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-                        	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-                        	at org.testng.TestNG.run(TestNG.java:1048)
-                        	at org.testng.TestNG.privateMain(TestNG.java:1355)
-                        	at org.testng.TestNG.main(TestNG.java:1324)
-                     </pre>
-                  </div>
-               </td>
-            </tr>
             <tr id="com.forrester.testCases.Mobformation_checkmobformation_byStatus_skiped_SKIP2_row"
                 class="testMethodStatusSKIP">
                <td width="100%" class="firstMethodCell">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Mobformation_checkmobformation_byStatus_skiped_SKIP2_details')">checkmobformation({Runmode=N, Text=Location Errors, Description=Cool, PlaceSearch=Tex})</a>
+                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Mobformation_checkmobformation_byStatus_skiped_SKIP2_details')">checkmobformation({Runmode=N, Text=Location Error, Description=Awesome, PlaceSearch=Phil})</a>
                </td>
-               <td nowrap="true">17:08:53</td>
-               <td nowrap="true" align="right">1 ms
+               <td nowrap="true">01:40:40</td>
+               <td nowrap="true" align="right">0 ms
                   
                </td>
                <td nowrap="true">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Mobformation_checkmobformation_byStatus_skiped_SKIP2_exception')">org.testng.SkipException: 
-                     Runmode set to NO for the data set
-                     
-                  </a>
                    
                   
                </td>
@@ -457,56 +260,197 @@
                      <div>
                         <b>Parameters: </b>
                         
+                        {Runmode=N, Text=Location Error, Description=Awesome, PlaceSearch=Phil}
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time: </b>01:40:40
+                     </div>
+                     <div>
+                        <b>End time: </b>01:40:40
+                     </div>
+                     <div>
+                        <b>Duration: </b>0 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.forrester.testCases.Mobformation_checkmobformation_byStatus_skiped_SKIP3_row"
+                class="testMethodStatusSKIP">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Mobformation_checkmobformation_byStatus_skiped_SKIP3_details')">checkmobformation({Runmode=N, Text=Location Errors, Description=Cool, PlaceSearch=Tex})</a>
+               </td>
+               <td nowrap="true">01:40:40</td>
+               <td nowrap="true" align="right">0 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.forrester.testCases.Mobformation_checkmobformation_byStatus_skiped_SKIP3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>checkmobformation
+                     </div>
+                     <div>
+                        <b>Signature: </b>checkmobformation(java.util.Hashtable)[pri:3, instance:com.forrester.testCases.Mobformation@459e9125]
+                     </div>
+                     <div>
+                        <b>Parameters: </b>
+                        
                         {Runmode=N, Text=Location Errors, Description=Cool, PlaceSearch=Tex}
                         
                         
                      </div>
                      <div>
-                        <b>Start time: </b>17:08:53
+                        <b>Start time: </b>01:40:40
                      </div>
                      <div>
-                        <b>End time: </b>17:08:53
+                        <b>End time: </b>01:40:40
                      </div>
                      <div>
-                        <b>Duration: </b>1 ms
+                        <b>Duration: </b>0 ms
                         
                      </div>
                   </div>
                </td>
             </tr>
+            <tr></tr>
+            <tr id="com.forrester.testCases.MobSearch_searchMob_byStatus_skiped_SKIP4_row"
+                class="testMethodStatusSKIP">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.MobSearch_searchMob_byStatus_skiped_SKIP4_details')">searchMob({PeopleSearch=Don, Runmode=Y, ExpectedText=Mobs})</a>
+               </td>
+               <td nowrap="true">01:40:40</td>
+               <td nowrap="true" align="right">0 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
             <tr>
                <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.Mobformation_checkmobformation_byStatus_skiped_SKIP2_exception"
+                  <div id="com.forrester.testCases.MobSearch_searchMob_byStatus_skiped_SKIP4_details"
                        class="testMethodDetails">
-                     <pre style="padding: 5px; margin: 0;">org.testng.SkipException: Runmode set to NO for the data set
-                        	at com.forrester.testCases.Mobformation.checkmobformation(Mobformation.java:37)
-                        	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-                        	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-                        	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-                        	at java.lang.reflect.Method.invoke(Method.java:497)
-                        	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-                        	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-                        	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-                        	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-                        	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-                        	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-                        	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-                        	at org.testng.TestRunner.run(TestRunner.java:624)
-                        	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-                        	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-                        	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-                        	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-                        	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-                        	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-                        	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-                        	at org.testng.TestNG.run(TestNG.java:1048)
-                        	at org.testng.TestNG.privateMain(TestNG.java:1355)
-                        	at org.testng.TestNG.main(TestNG.java:1324)
-                     </pre>
+                     <div>
+                        <b>Name: </b>searchMob
+                     </div>
+                     <div>
+                        <b>Signature: </b>searchMob(java.util.Hashtable)[pri:2, instance:com.forrester.testCases.MobSearch@36fc695d]
+                     </div>
+                     <div>
+                        <b>Parameters: </b>
+                        
+                        {PeopleSearch=Don, Runmode=Y, ExpectedText=Mobs}
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time: </b>01:40:40
+                     </div>
+                     <div>
+                        <b>End time: </b>01:40:40
+                     </div>
+                     <div>
+                        <b>Duration: </b>0 ms
+                        
+                     </div>
                   </div>
                </td>
             </tr>
+            <tr></tr>
+            <tr id="com.forrester.testCases.MobSearch_searchMob_byStatus_skiped_SKIP5_row"
+                class="testMethodStatusSKIP">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.MobSearch_searchMob_byStatus_skiped_SKIP5_details')">searchMob({PeopleSearch=Mon, Runmode=Y, ExpectedText=Bon})</a>
+               </td>
+               <td nowrap="true">01:40:40</td>
+               <td nowrap="true" align="right">0 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.forrester.testCases.MobSearch_searchMob_byStatus_skiped_SKIP5_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>searchMob
+                     </div>
+                     <div>
+                        <b>Signature: </b>searchMob(java.util.Hashtable)[pri:2, instance:com.forrester.testCases.MobSearch@36fc695d]
+                     </div>
+                     <div>
+                        <b>Parameters: </b>
+                        
+                        {PeopleSearch=Mon, Runmode=Y, ExpectedText=Bon}
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time: </b>01:40:40
+                     </div>
+                     <div>
+                        <b>End time: </b>01:40:40
+                     </div>
+                     <div>
+                        <b>Duration: </b>0 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.forrester.testCases.MobSearch_teardown_byStatus_skiped_SKIP6_row"
+                class="testMethodStatusSKIP testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.MobSearch_teardown_byStatus_skiped_SKIP6_details')">teardown()</a>
+               </td>
+               <td nowrap="true">01:40:40</td>
+               <td nowrap="true" align="right">0 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.forrester.testCases.MobSearch_teardown_byStatus_skiped_SKIP6_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>teardown
+                     </div>
+                     <div>
+                        <b>Signature: </b>teardown()[pri:0, instance:com.forrester.testCases.MobSearch@36fc695d]
+                     </div>
+                     <div>
+                        <b>Start time: </b>01:40:40
+                     </div>
+                     <div>
+                        <b>End time: </b>01:40:40
+                     </div>
+                     <div>
+                        <b>Duration: </b>0 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
          </table>
       </div>
       <div id="testMethodsByClass" style="display: none;">
@@ -527,15 +471,11 @@
                <td width="100%" class="firstMethodCell">
                   <a onclick="toggleDetailsVisibility('com.forrester.testCases.Mobformation_checkmobformation_byClass_SKIP1_details')">checkmobformation({Runmode=N, Text=Location Error, Description=Awesome, PlaceSearch=Phil})</a>
                </td>
-               <td nowrap="true">17:08:52</td>
-               <td nowrap="true" align="right">1 ms
+               <td nowrap="true">01:40:40</td>
+               <td nowrap="true" align="right">0 ms
                   
                </td>
                <td nowrap="true">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Mobformation_checkmobformation_byClass_SKIP1_exception')">org.testng.SkipException: 
-                     Runmode set to NO for the data set
-                     
-                  </a>
                    
                   
                </td>
@@ -558,65 +498,29 @@
                         
                      </div>
                      <div>
-                        <b>Start time: </b>17:08:52
+                        <b>Start time: </b>01:40:40
                      </div>
                      <div>
-                        <b>End time: </b>17:08:52
+                        <b>End time: </b>01:40:40
                      </div>
                      <div>
-                        <b>Duration: </b>1 ms
+                        <b>Duration: </b>0 ms
                         
                      </div>
                   </div>
                </td>
             </tr>
-            <tr>
-               <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.Mobformation_checkmobformation_byClass_SKIP1_exception"
-                       class="testMethodDetails">
-                     <pre style="padding: 5px; margin: 0;">org.testng.SkipException: Runmode set to NO for the data set
-                        	at com.forrester.testCases.Mobformation.checkmobformation(Mobformation.java:37)
-                        	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-                        	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-                        	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-                        	at java.lang.reflect.Method.invoke(Method.java:497)
-                        	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-                        	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-                        	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-                        	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-                        	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-                        	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-                        	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-                        	at org.testng.TestRunner.run(TestRunner.java:624)
-                        	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-                        	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-                        	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-                        	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-                        	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-                        	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-                        	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-                        	at org.testng.TestNG.run(TestNG.java:1048)
-                        	at org.testng.TestNG.privateMain(TestNG.java:1355)
-                        	at org.testng.TestNG.main(TestNG.java:1324)
-                     </pre>
-                  </div>
-               </td>
-            </tr>
+            <tr></tr>
             <tr id="com.forrester.testCases.Mobformation_checkmobformation_byClass_SKIP2_row"
                 class="testMethodStatusSKIP">
                <td width="100%" class="firstMethodCell">
                   <a onclick="toggleDetailsVisibility('com.forrester.testCases.Mobformation_checkmobformation_byClass_SKIP2_details')">checkmobformation({Runmode=N, Text=Location Errors, Description=Cool, PlaceSearch=Tex})</a>
                </td>
-               <td nowrap="true">17:08:53</td>
-               <td nowrap="true" align="right">1 ms
+               <td nowrap="true">01:40:40</td>
+               <td nowrap="true" align="right">0 ms
                   
                </td>
                <td nowrap="true">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Mobformation_checkmobformation_byClass_SKIP2_exception')">org.testng.SkipException: 
-                     Runmode set to NO for the data set
-                     
-                  </a>
                    
                   
                </td>
@@ -639,51 +543,19 @@
                         
                      </div>
                      <div>
-                        <b>Start time: </b>17:08:53
+                        <b>Start time: </b>01:40:40
                      </div>
                      <div>
-                        <b>End time: </b>17:08:53
+                        <b>End time: </b>01:40:40
                      </div>
                      <div>
-                        <b>Duration: </b>1 ms
+                        <b>Duration: </b>0 ms
                         
                      </div>
                   </div>
                </td>
             </tr>
-            <tr>
-               <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.Mobformation_checkmobformation_byClass_SKIP2_exception"
-                       class="testMethodDetails">
-                     <pre style="padding: 5px; margin: 0;">org.testng.SkipException: Runmode set to NO for the data set
-                        	at com.forrester.testCases.Mobformation.checkmobformation(Mobformation.java:37)
-                        	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-                        	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-                        	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-                        	at java.lang.reflect.Method.invoke(Method.java:497)
-                        	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-                        	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-                        	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-                        	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-                        	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-                        	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-                        	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-                        	at org.testng.TestRunner.run(TestRunner.java:624)
-                        	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-                        	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-                        	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-                        	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-                        	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-                        	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-                        	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-                        	at org.testng.TestNG.run(TestNG.java:1048)
-                        	at org.testng.TestNG.privateMain(TestNG.java:1355)
-                        	at org.testng.TestNG.main(TestNG.java:1324)
-                     </pre>
-                  </div>
-               </td>
-            </tr>
+            <tr></tr>
          </table>
          <br></br>
          <table class="testMethodsTable" cellpadding="0" cellspacing="0">
@@ -698,13 +570,13 @@
                <td nowrap="true">Duration</td>
                <td>Exception</td>
             </tr>
-            <tr id="com.forrester.testCases.MobSearch_searchMob_byClass_PASS1_row"
-                class="testMethodStatusPASS">
+            <tr id="com.forrester.testCases.MobSearch_searchMob_byClass_SKIP1_row"
+                class="testMethodStatusSKIP">
                <td width="100%" class="firstMethodCell">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.MobSearch_searchMob_byClass_PASS1_details')">searchMob({PeopleSearch=Don, Runmode=Y, ExpectedText=Mobs})</a>
+                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.MobSearch_searchMob_byClass_SKIP1_details')">searchMob({PeopleSearch=Don, Runmode=Y, ExpectedText=Mobs})</a>
                </td>
-               <td nowrap="true">17:09:06</td>
-               <td nowrap="true" align="right">26s
+               <td nowrap="true">01:40:40</td>
+               <td nowrap="true" align="right">0 ms
                   
                </td>
                <td nowrap="true">
@@ -714,7 +586,7 @@
             </tr>
             <tr>
                <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.MobSearch_searchMob_byClass_PASS1_details"
+                  <div id="com.forrester.testCases.MobSearch_searchMob_byClass_SKIP1_details"
                        class="testMethodDetails">
                      <div>
                         <b>Name: </b>searchMob
@@ -730,40 +602,36 @@
                         
                      </div>
                      <div>
-                        <b>Start time: </b>17:09:06
+                        <b>Start time: </b>01:40:40
                      </div>
                      <div>
-                        <b>End time: </b>17:09:32
+                        <b>End time: </b>01:40:40
                      </div>
                      <div>
-                        <b>Duration: </b>26s
+                        <b>Duration: </b>0 ms
                         
                      </div>
                   </div>
                </td>
             </tr>
             <tr></tr>
-            <tr id="com.forrester.testCases.MobSearch_searchMob_byClass_FAIL2_row"
-                class="testMethodStatusFAIL">
+            <tr id="com.forrester.testCases.MobSearch_searchMob_byClass_SKIP2_row"
+                class="testMethodStatusSKIP">
                <td width="100%" class="firstMethodCell">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.MobSearch_searchMob_byClass_FAIL2_details')">searchMob({PeopleSearch=Mon, Runmode=Y, ExpectedText=Bon})</a>
+                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.MobSearch_searchMob_byClass_SKIP2_details')">searchMob({PeopleSearch=Mon, Runmode=Y, ExpectedText=Bon})</a>
                </td>
-               <td nowrap="true">17:09:34</td>
-               <td nowrap="true" align="right">18s
+               <td nowrap="true">01:40:40</td>
+               <td nowrap="true" align="right">0 ms
                   
                </td>
                <td nowrap="true">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.MobSearch_searchMob_byClass_FAIL2_exception')">java.lang.AssertionError: 
-                     expected [Bon] but found [Mobs]
-                     
-                  </a>
                    
                   
                </td>
             </tr>
             <tr>
                <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.MobSearch_searchMob_byClass_FAIL2_details"
+                  <div id="com.forrester.testCases.MobSearch_searchMob_byClass_SKIP2_details"
                        class="testMethodDetails">
                      <div>
                         <b>Name: </b>searchMob
@@ -779,64 +647,26 @@
                         
                      </div>
                      <div>
-                        <b>Start time: </b>17:09:34
+                        <b>Start time: </b>01:40:40
                      </div>
                      <div>
-                        <b>End time: </b>17:09:52
+                        <b>End time: </b>01:40:40
                      </div>
                      <div>
-                        <b>Duration: </b>18s
+                        <b>Duration: </b>0 ms
                         
                      </div>
                   </div>
                </td>
             </tr>
-            <tr>
-               <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.MobSearch_searchMob_byClass_FAIL2_exception"
-                       class="testMethodDetails">
-                     <pre style="padding: 5px; margin: 0;">java.lang.AssertionError: expected [Bon] but found [Mobs]
-                        	at org.testng.Assert.fail(Assert.java:94)
-                        	at org.testng.Assert.failNotEquals(Assert.java:496)
-                        	at org.testng.Assert.assertEquals(Assert.java:125)
-                        	at org.testng.Assert.assertEquals(Assert.java:178)
-                        	at org.testng.Assert.assertEquals(Assert.java:188)
-                        	at com.forrester.pages.MobsPage.MonPeopleSearch(MobsPage.java:28)
-                        	at com.forrester.testCases.MobSearch.searchMob(MobSearch.java:37)
-                        	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-                        	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-                        	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-                        	at java.lang.reflect.Method.invoke(Method.java:497)
-                        	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-                        	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-                        	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-                        	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-                        	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-                        	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-                        	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-                        	at org.testng.TestRunner.run(TestRunner.java:624)
-                        	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-                        	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-                        	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-                        	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-                        	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-                        	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-                        	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-                        	at org.testng.TestNG.run(TestNG.java:1048)
-                        	at org.testng.TestNG.privateMain(TestNG.java:1355)
-                        	at org.testng.TestNG.main(TestNG.java:1324)
-                     </pre>
-                  </div>
-               </td>
-            </tr>
-            <tr id="com.forrester.testCases.MobSearch_teardown_byClass_PASS3_row"
-                class="testMethodStatusPASS testMethodStatusCONF">
+            <tr></tr>
+            <tr id="com.forrester.testCases.MobSearch_teardown_byClass_SKIP3_row"
+                class="testMethodStatusSKIP testMethodStatusCONF">
                <td width="100%" class="firstMethodCell">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.MobSearch_teardown_byClass_PASS3_details')">teardown()</a>
+                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.MobSearch_teardown_byClass_SKIP3_details')">teardown()</a>
                </td>
-               <td nowrap="true">17:09:55</td>
-               <td nowrap="true" align="right">1 ms
+               <td nowrap="true">01:40:40</td>
+               <td nowrap="true" align="right">0 ms
                   
                </td>
                <td nowrap="true">
@@ -846,7 +676,7 @@
             </tr>
             <tr>
                <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.MobSearch_teardown_byClass_PASS3_details"
+                  <div id="com.forrester.testCases.MobSearch_teardown_byClass_SKIP3_details"
                        class="testMethodDetails">
                      <div>
                         <b>Name: </b>teardown
@@ -855,13 +685,13 @@
                         <b>Signature: </b>teardown()[pri:0, instance:com.forrester.testCases.MobSearch@36fc695d]
                      </div>
                      <div>
-                        <b>Start time: </b>17:09:55
+                        <b>Start time: </b>01:40:40
                      </div>
                      <div>
-                        <b>End time: </b>17:09:55
+                        <b>End time: </b>01:40:40
                      </div>
                      <div>
-                        <b>Duration: </b>1 ms
+                        <b>Duration: </b>0 ms
                         
                      </div>
                   </div>
@@ -882,13 +712,13 @@
                <td nowrap="true">Duration</td>
                <td>Exception</td>
             </tr>
-            <tr id="com.forrester.testCases.Navigate_navigateaction_byClass_PASS1_row"
-                class="testMethodStatusPASS">
+            <tr id="com.forrester.testCases.Navigate_navigateaction_byClass_SKIP1_row"
+                class="testMethodStatusSKIP">
                <td width="100%" class="firstMethodCell">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Navigate_navigateaction_byClass_PASS1_details')">navigateaction({PlaceLocation=ariz, Runmode=Y})</a>
+                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Navigate_navigateaction_byClass_SKIP1_details')">navigateaction({PlaceLocation=ariz, Runmode=Y})</a>
                </td>
-               <td nowrap="true">17:07:58</td>
-               <td nowrap="true" align="right">49s
+               <td nowrap="true">01:40:37</td>
+               <td nowrap="true" align="right">0 ms
                   
                </td>
                <td nowrap="true">
@@ -898,7 +728,7 @@
             </tr>
             <tr>
                <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.Navigate_navigateaction_byClass_PASS1_details"
+                  <div id="com.forrester.testCases.Navigate_navigateaction_byClass_SKIP1_details"
                        class="testMethodDetails">
                      <div>
                         <b>Name: </b>navigateaction
@@ -914,13 +744,13 @@
                         
                      </div>
                      <div>
-                        <b>Start time: </b>17:07:58
+                        <b>Start time: </b>01:40:37
                      </div>
                      <div>
-                        <b>End time: </b>17:08:47
+                        <b>End time: </b>01:40:37
                      </div>
                      <div>
-                        <b>Duration: </b>49s
+                        <b>Duration: </b>0 ms
                         
                      </div>
                   </div>
@@ -941,24 +771,33 @@
                <td nowrap="true">Duration</td>
                <td>Exception</td>
             </tr>
-            <tr id="com.forrester.testCases.Navigate_beforetest_byClass_PASS1_row"
-                class="testMethodStatusPASS testMethodStatusCONF">
+            <tr id="com.forrester.testCases.Navigate_beforetest_byClass_FAIL1_row"
+                class="testMethodStatusFAIL testMethodStatusCONF">
                <td width="100%" class="firstMethodCell">
-                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Navigate_beforetest_byClass_PASS1_details')">beforetest()</a>
+                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Navigate_beforetest_byClass_FAIL1_details')">beforetest()</a>
                </td>
-               <td nowrap="true">17:06:48</td>
-               <td nowrap="true" align="right">1m
-                  9s
+               <td nowrap="true">01:40:26</td>
+               <td nowrap="true" align="right">0 ms
                   
                </td>
                <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('com.forrester.testCases.Navigate_beforetest_byClass_FAIL1_exception')">org.openqa.selenium.SessionNotCreatedException: 
+                     A new session could not be created. Details: Appium's IosDriver does not support xcode version 8.2.1. Apple has deprecated
+                     UIAutomation. Use the "XCUITest" automationName capability instead. (WARNING: The server did not provide any stacktrace information)
+                     Command duration or timeout: 370 milliseconds
+                     Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+                     System info: host: 'PUNsgomes0MFVH7.local', ip: '192.168.1.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.2',
+                     java.version: '1.8.0_60'
+                     Driver info: io.appium.java_client.ios.IOSDriver
+                     
+                  </a>
                    
                   
                </td>
             </tr>
             <tr>
                <td colspan="4" class="detailsBox">
-                  <div id="com.forrester.testCases.Navigate_beforetest_byClass_PASS1_details"
+                  <div id="com.forrester.testCases.Navigate_beforetest_byClass_FAIL1_details"
                        class="testMethodDetails">
                      <div>
                         <b>Name: </b>beforetest
@@ -967,20 +806,70 @@
                         <b>Signature: </b>beforetest()[pri:0, instance:com.forrester.testCases.Navigate@6df97b55]
                      </div>
                      <div>
-                        <b>Start time: </b>17:06:48
+                        <b>Start time: </b>01:40:26
                      </div>
                      <div>
-                        <b>End time: </b>17:07:58
+                        <b>End time: </b>01:40:26
                      </div>
                      <div>
-                        <b>Duration: </b>1m
-                        9s
+                        <b>Duration: </b>0 ms
                         
                      </div>
                   </div>
                </td>
             </tr>
-            <tr></tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.forrester.testCases.Navigate_beforetest_byClass_FAIL1_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">org.openqa.selenium.SessionNotCreatedException: A new session could not be created. Details: Appium's IosDriver does not support
+                        xcode version 8.2.1. Apple has deprecated UIAutomation. Use the "XCUITest" automationName capability instead. (WARNING: The
+                        server did not provide any stacktrace information)
+                        Command duration or timeout: 370 milliseconds
+                        Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+                        System info: host: 'PUNsgomes0MFVH7.local', ip: '192.168.1.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.2',
+                        java.version: '1.8.0_60'
+                        Driver info: io.appium.java_client.ios.IOSDriver
+                        	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+                        	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+                        	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+                        	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+                        	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+                        	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+                        	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+                        	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+                        	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+                        	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+                        	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:36)
+                        	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:114)
+                        	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:132)
+                        	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:82)
+                        	at com.forrester.config.MobileAppConfiguration.setupMobileAppConfigForIOS(MobileAppConfiguration.java:105)
+                        	at com.forrester.testCases.Navigate.beforetest(Navigate.java:29)
+                        	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                        	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        	at java.lang.reflect.Method.invoke(Method.java:497)
+                        	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+                        	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+                        	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+                        	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:298)
+                        	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+                        	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+                        	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+                        	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+                        	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+                        	at org.testng.TestNG.run(TestNG.java:1048)
+                        	at org.testng.TestNG.privateMain(TestNG.java:1355)
+                        	at org.testng.TestNG.main(TestNG.java:1324)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
          </table>
          <br></br>
       </div>

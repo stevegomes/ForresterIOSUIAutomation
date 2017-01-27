@@ -1,24 +1,16 @@
 package com.forrester.base;
-
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.service.local.AppiumDriverLocalService;
-import io.appium.java_client.service.local.AppiumServiceBuilder;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Properties;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Keyboard;
-
 import com.forrester.util.Xls_Reader;
 
 public class Base {
@@ -32,9 +24,7 @@ public class Base {
 		this.driver = driveri;
 
 		try {
-			FileInputStream fs = new FileInputStream(
-					System.getProperty("user.dir")
-							+ "/src/test/java/com/forrester/config/OR.properties");
+			FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/forrester/config/OR.properties");
 			OR.load(fs);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -45,8 +35,6 @@ public class Base {
 
 
 	/////These are all the custom function//////
-	
-
 	// tap
 	public void tap(int fingers, int x, int y, int duration) {
 		try {
@@ -142,8 +130,7 @@ public class Base {
 		// WebDriverWait wait = new WebDriverWait (driver,10);
 		// wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(OR.getProperty(xpathkey))));
 
-		String actual_text = driver.findElement(
-				By.xpath(OR.getProperty(xpathkey))).getText();
+		String actual_text = driver.findElement(By.xpath(OR.getProperty(xpathkey))).getText();
 		return actual_text;
 		//System.out.println("Actual text is:" + actual_text);
 		// Assert.assertEquals(actual_text,expected );
@@ -155,11 +142,9 @@ public class Base {
 	Date d=new Date();
 	String screenshotFile=d.toString().replace(":", "_").replace(" ", "_")+".png";
 				// store screenshot in that file
-		File scrFile = ((TakesScreenshot) driver)
-				.getScreenshotAs(OutputType.FILE);
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir")
-					+ "/screenshots/" + screenshotFile));
+			FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir")+ "/screenshots/" + screenshotFile));
 		} catch (IOException e) {
 
 			e.printStackTrace();
